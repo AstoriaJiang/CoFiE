@@ -1,0 +1,1 @@
+python -m lmms_eval   --model qwen3_vl_attn_v2   --model_args pretrained=/root/autodl-tmp/CoFiE/ckpt/Qwen3-VL-8B-Instruct,attn_layer_idx=-1,top_k_ratio=0.5,scorer_chunk_size=512,max_num_frames=32,fps=1   --tasks mlvu_dev_chat   --batch_size 1 --verbosity=DEBUG

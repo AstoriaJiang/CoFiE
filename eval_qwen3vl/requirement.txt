@@ -1,0 +1,24 @@
+# Transformers版本非常重要
+transformers==5.6.2
+accelerate==1.5.2
+qwen-vl-utils[decord]==0.0.10
+six>=1.17.0
+
+# uv pip install torch==2.10 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0
+torchvision==0.23.0
+
+# apt-get install -y ffmpeg libavdevice58 libavformat58 libavcodec58 libavutil56
+torchcodec==0.7
+
+setuptools
+ninja
+# wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
+# uv pip install flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp310-cp310-linux_x86_64.whl
+
+# for eval
+ffmpeg-python==0.2.0
+moviepy==1.0.3
+
+# git clone https://github.com/EvolvingLMMs-Lab/lmms-eval.git eval_qwen3vl/lmms-eval
+# cd eval_qwen3vl/lmms-eval && uv pip install -e ".[all]"
